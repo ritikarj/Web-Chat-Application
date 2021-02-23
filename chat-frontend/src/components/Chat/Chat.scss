@@ -1,0 +1,46 @@
+@import '../../assets/scss/variables';
+
+#chat-container{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $bg-gray ;
+    height: 100%;
+    margin: 0 !important;
+
+    #chat-wrap{
+        display: grid;
+        grid-template-columns:1fr 4fr;
+        grid-gap:1rem;
+        // display: flex;
+        // flex-direction: column;
+        // flex-grow: i;
+        overflow: hidden;
+        padding: 2rem 1rem;
+    
+        #friends {
+            // display: flex;
+            // flex-direction: column;
+            
+            padding: 15px 0;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            max-width: 200px;
+            // flex-grow: 1;
+        }
+        #messenger {
+            justify-content: space-between;
+            padding: 15px;
+            // flex-grow: 2;
+            background-color:white;
+            margin-right: 25px;
+            min-height: 80vh;
+        }
+
+
+    }
+}
